@@ -1,6 +1,10 @@
 # Write your code here.
+katz_deli = []
 
 def line(katz_deli)
-  katz_deli.size == 0
-    puts "The line is empty"
+  if katz_deli.size == 0
+    puts "The line is currently empty."
+  else
+    array.each_with_index { |}
 end
+
