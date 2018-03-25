@@ -12,7 +12,15 @@ def line(katz_deli)
 end
 end
 
-def take_a_number(katz_deli, name)
-  katz_deli << name
-  puts "Welcome, #{name}. You are number #{index+1} in line."
+def take_a_number(katz_deli, new_person)
+  katz_deli << new_person
+  puts "Welcome, #{new_person}. You are number #{katz_deli.size} in line."
+end
+
+def now_serving(katz_deli)
+  if katz_deli.empty?
+    puts "There is nobody waiting to be served!"
+  elsif new_line = katz_deli.shift
+    puts "Currently serving #{new_line}."
+  end
 end
